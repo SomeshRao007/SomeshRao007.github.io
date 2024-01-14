@@ -388,6 +388,7 @@ h6,
   color: inherit;
 }
 
+
 h6_black,
 .h6_black {
   margin-bottom: 0.5rem;
@@ -397,6 +398,7 @@ h6_black,
   color: rgb(29, 28, 28);
   display: block;
 }
+
 
 h1,
 .h1 {
@@ -428,10 +430,10 @@ h6,
   font-size: 1rem;
 }
 
-h6_black,
+/* h6_black,
 .h6_black {
   font-size: 1rem;
-}
+} */
 
 .lead {
   font-size: 1.25rem;
@@ -12483,7 +12485,7 @@ textarea.form-control {
     padding-right: 5px !important;
   }
   .timeline_title{
-    font-size: 16px;
+    font-size: 20px;
   }
   .timeline_text{
     font-size: 12px;
