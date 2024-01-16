@@ -12363,8 +12363,8 @@ textarea.form-control {
 }
 
 #ftco-loader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
-  animation: loader-rotate 2s linear infinite;
+  -webkit-animation: loader-rotate 1s linear infinite;
+  animation: loader-rotate 1s linear infinite;
   position: absolute;
   left: calc(50% - 24px);
   top: calc(50% - 24px);
@@ -12377,8 +12377,8 @@ textarea.form-control {
 #ftco-loader .path {
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
+  -webkit-animation: loader-dash 1s ease-in-out infinite;
+  animation: loader-dash 1s ease-in-out infinite;
   stroke-linecap: round;
 }
 
