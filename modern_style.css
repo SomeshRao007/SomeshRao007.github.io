@@ -161,7 +161,7 @@ nav ul li a:hover {
 
 .telugu-philosophy {
     font-size: 2rem;
-    color: #87CEEB; /* Sky Blue */
+    color: #87CEEB;
     font-weight: 700;
     margin: 0.5rem 0;
 }
@@ -355,6 +355,10 @@ footer {
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.contact-form input[name="_gotcha"] {
+    display: none;
 }
 
 /* Learning List */

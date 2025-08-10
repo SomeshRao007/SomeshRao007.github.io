@@ -21,7 +21,7 @@ const animateCounters = () => {
 
             if (count < target) {
                 counter.innerText = Math.ceil(count + inc);
-                setTimeout(updateCount, 1);
+                requestAnimationFrame(updateCount);
             } else {
                 counter.innerText = target;
             }
