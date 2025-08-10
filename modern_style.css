@@ -413,6 +413,7 @@ footer {
 
     .hero-text {
         max-width: 100%;
+        text-align: center;
     }
 
     .hero-image img {
@@ -451,6 +452,16 @@ footer {
 
     .contact-image {
         display: none; /* Hide image on smaller screens */
+    }
+
+    #counter-section .container {
+        width: 100%;
+        padding: 3rem 1rem;
+        border-radius: 0;
+    }
+
+    footer .container {
+        width: 100%;
     }
 }
 
