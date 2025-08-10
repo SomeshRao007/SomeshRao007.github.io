@@ -98,3 +98,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+    // Advanced Mobile Nav Logic
+    const hamburger = document.getElementById('hamburger-menu');
+    const closeNavBtn = document.getElementById('close-nav');
+    const overlay = document.getElementById('mobile-nav-overlay');
+    const mainContent = document.querySelector('main');
+    const overlayLinks = document.querySelectorAll('.overlay-content a');
+
+    if (hamburger && closeNavBtn && overlay && mainContent) {
+        hamburger.addEventListener('click', () => {
+            overlay.style.width = '100%';
+            mainContent.classList.add('blur');
+            document.body.classList.add('overlay-active');
+        });
+
+        const closeNav = () => {
+            overlay.style.width = '0%';
+            mainContent.classList.remove('blur');
+            document.body.classList.remove('overlay-active');
+        };
+
+        closeNavBtn.addEventListener('click', closeNav);
+        
+        overlayLinks.forEach(link => {
+            link.addEventListener('click', closeNav);
+        });
+    }
