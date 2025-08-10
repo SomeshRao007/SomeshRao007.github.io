@@ -13,17 +13,35 @@
             <div class="logo">
                 <a href="#home">SRC</a>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#learning">Learning List</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#learning">Learning List</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger-menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </nav>
     </header>
+
+    <div id="mobile-nav-overlay" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" id="close-nav">&times;</a>
+        <div class="overlay-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#learning">Learning List</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
     <main>
         <section id="home">
@@ -80,25 +98,47 @@
                     <h2>Technical Expertise</h2>
                     <p>Always ready to try hands-on new and emerging technologies</p>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-item">AWS Cloud</div>
-                    <div class="skill-item">Kubernetes</div>
-                    <div class="skill-item">Docker & Containerization</div>
-                    <div class="skill-item">Monitoring: Promouthes, Grafana & Fluentbit</div>
-                    <div class="skill-item">Terraform</div>
-                    <div class="skill-item">Deep Learning</div>
-                    <div class="skill-item">Python</div>
-                    <div class="skill-item">PHP</div>
-                    <div class="skill-item">Javascript flavours</div>
-                    <div class="skill-item">Langchain and Crew AI</div>
-                    <div class="skill-item">Agentic AI systems</div>
-                    <div class="skill-item">Linux</div>
-                    <div class="skill-item">Odoo dev</div>
-                    <div class="skill-item">Bash Scripts</div>
-                    <div class="skill-item">Ruby on Rails</div>
-                    <div class="skill-item">SQL</div>
-                    <div class="skill-item">Android</div>
-                    <div class="skill-item">Matlab</div>
+                <div class="skills-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-link active" data-tab="cloud-devops">Cloud & DevOps</button>
+                        <button class="tab-link" data-tab="ai-ml">AI/ML</button>
+                        <button class="tab-link" data-tab="web-dev">Web Development</button>
+                        <button class="tab-link" data-tab="programming-db">Programming & Databases</button>
+                    </div>
+                    <div id="cloud-devops" class="tab-content active">
+                        <div class="skills-grid">
+                            <div class="skill-item"><img src="images/skills/aws.png" alt="AWS"><span>AWS Cloud</span></div>
+                            <div class="skill-item"><img src="images/skills/kubernetes.png" alt="Kubernetes"><span>Kubernetes</span></div>
+                            <div class="skill-item"><img src="images/skills/docker.png" alt="Docker"><span>Docker & Containerization</span></div>
+                            <div class="skill-item"><img src="images/skills/terraform.png" alt="Terraform"><span>Terraform</span></div>
+                            <div class="skill-item"><img src="images/skills/monitoring.png" alt="Monitoring"><span>Monitoring: Prometheus, Grafana & Fluentbit</span></div>
+                            <div class="skill-item"><img src="images/skills/linux.png" alt="Linux"><span>Linux</span></div>
+                            <div class="skill-item"><img src="images/skills/bash.png" alt="Bash"><span>Bash Scripts</span></div>
+                        </div>
+                    </div>
+                    <div id="ai-ml" class="tab-content">
+                        <div class="skills-grid">
+                            <div class="skill-item"><img src="images/skills/deep_learning.png" alt="Deep Learning"><span>Deep Learning</span></div>
+                            <div class="skill-item"><img src="images/skills/langchain.png" alt="Langchain"><span>Langchain and Crew AI</span></div>
+                            <div class="skill-item"><img src="images/skills/agentic_ai.png" alt="Agentic AI"><span>Agentic AI systems</span></div>
+                        </div>
+                    </div>
+                    <div id="web-dev" class="tab-content">
+                        <div class="skills-grid">
+                            <div class="skill-item"><img src="images/skills/php.png" alt="PHP"><span>PHP</span></div>
+                            <div class="skill-item"><img src="images/skills/javascript.png" alt="JavaScript"><span>Javascript flavours</span></div>
+                            <div class="skill-item"><img src="images/skills/rails.png" alt="Ruby on Rails"><span>Ruby on Rails</span></div>
+                            <div class="skill-item"><img src="images/skills/odoo.png" alt="Odoo"><span>Odoo dev</span></div>
+                        </div>
+                    </div>
+                    <div id="programming-db" class="tab-content">
+                        <div class="skills-grid">
+                            <div class="skill-item"><img src="images/skills/python.png" alt="Python"><span>Python</span></div>
+                            <div class="skill-item"><img src="images/skills/sql.png" alt="SQL"><span>SQL</span></div>
+                            <div class="skill-item"><img src="images/skills/android.png" alt="Android"><span>Android</span></div>
+                            <div class="skill-item"><img src="images/skills/matlab.png" alt="Matlab"><span>Matlab</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,7 +156,8 @@
                         <div class="timeline-date">September 2024</div>
                         <div class="timeline-content">
                             <h3>DevOps Engineer at Cloudpepper</h3>
-                            <p>I have extensive experience managing and automating cloud infrastructure on AWS and OVH to ensure seamless platform operations. I architected and deployed a containerized health check application on AWS using ECS Fargate, SQS, VPC, and CloudWatch, enhancing it with asynchronous request handling for improved performance. The entire infrastructure provisioning for this application was fully automated using Terraform and GitHub Actions.  I successfully migrated SSL certificate management from Traefik to Certbot for over 3000 active servers, developing complex Bash scripts to convert existing certificates. In another initiative, I seamlessly replaced the Traefik reverse proxy with Nginx across all servers using Ansible. To bolster security, I integrated Oauth2 Proxy as a middleware to protect multiple web applications with robust authentication.  I developed a custom, lightweight system to asynchronously monitor server vitals (CPU, RAM, disk usage), providing automated email alerts via AWS SES during sustained high loads. I also engineered an external database integration, enabling Odoo users on our platform to connect with their custom databases.</p>
+                            <p>I have extensive experience managing and automating cloud infrastructure on AWS and OVH to ensure seamless platform operations...</p>
+                            <button class="read-more-btn" data-fulltext="I have extensive experience managing and automating cloud infrastructure on AWS and OVH to ensure seamless platform operations. I architected and deployed a containerized health check application on AWS using ECS Fargate, SQS, VPC, and CloudWatch, enhancing it with asynchronous request handling for improved performance. The entire infrastructure provisioning for this application was fully automated using Terraform and GitHub Actions.  I successfully migrated SSL certificate management from Traefik to Certbot for over 3000 active servers, developing complex Bash scripts to convert existing certificates. In another initiative, I seamlessly replaced the Traefik reverse proxy with Nginx across all servers using Ansible. To bolster security, I integrated Oauth2 Proxy as a middleware to protect multiple web applications with robust authentication.  I developed a custom, lightweight system to asynchronously monitor server vitals (CPU, RAM, disk usage), providing automated email alerts via AWS SES during sustained high loads. I also engineered an external database integration, enabling Odoo users on our platform to connect with their custom databases.">Read More</button>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -124,7 +165,8 @@
                         <div class="timeline-date">April 2024</div>
                         <div class="timeline-content">
                             <h3>Intern at Pearlthoughts</h3>
-                            <p>I manage AWS cloud infrastructure and have successfully automated workflows across teams, resulting in a 40% reduction in deployment time and cost, while also enhancing collaboration efficiency across three departments. I have researched and integrated an Application Performance Monitoring (APM) solution for a PHP application based on a Yii2 legacy project, with the integrated monitoring tool now being used by over 10 developers. This integration has significantly enhanced observability, improving uptime by 25% and reducing response time by 30%. Additionally, I streamlined workflow automation across various environments, saving 20 hours per month by minimising manual tasks and enhancing productivity through effective tooling. Furthermore, I have optimised Docker images for better security and reduced sizes, further contributing to the overall efficiency and security of our development and deployment processes.</p>
+                            <p>I drove a 40% reduction in deployment time and costs by engineering automated workflows on AWS, which also enhanced collaboration efficiency across three key departments....</p>
+                            <button class="read-more-btn" data-fulltext="I manage AWS cloud infrastructure and have successfully automated workflows across teams, resulting in a 40% reduction in deployment time and cost, while also enhancing collaboration efficiency across three departments. I have researched and integrated an Application Performance Monitoring (APM) solution for a PHP application based on a Yii2 legacy project, with the integrated monitoring tool now being used by over 10 developers. This integration has significantly enhanced observability, improving uptime by 25% and reducing response time by 30%. Additionally, I streamlined workflow automation across various environments, saving 20 hours per month by minimising manual tasks and enhancing productivity through effective tooling. Furthermore, I have optimised Docker images for better security and reduced sizes, further contributing to the overall efficiency and security of our development and deployment processes.">Read More</button>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -132,7 +174,8 @@
                         <div class="timeline-date">Nov 2023</div>
                         <div class="timeline-content">
                             <h3>International DSAI Conference</h3>
-                            <p>Presented my Masters Reseach work at International Conference on Data Science & Artificial Intelligence held at Berkeley Hotel Pratunam, Bangkok, Thailand from 27 to 29 of November 2023</p>
+                            <p>Presented my Masters Reseach work at International Conference on Data Science & Artificial Intelligence...</p>
+                            <button class="read-more-btn" data-fulltext="Presented my Masters Reseach work at International Conference on Data Science & Artificial Intelligence held at Berkeley Hotel Pratunam, Bangkok, Thailand from 27 to 29 of November 2023">Read More</button>
                         </div>
                     </div>
                      <div class="timeline-item">
@@ -140,7 +183,8 @@
                         <div class="timeline-date">Aug - Dec 2023</div>
                         <div class="timeline-content">
                             <h3>Teaching Assistant for Fullstack Application Development</h3>
-                             <p>Designed and implemented course structure for Full Stack Application Development course for Masters students. Gave Lectures 6-9 hrs per week on relavent topics such as Web Development & Database Managment. Lead lab sessions, elevating student understanding and engagement in the course.</p>
+                             <p>Designed and implemented course structure for Full Stack Application Development course for Masters students...</p>
+                             <button class="read-more-btn" data-fulltext="Designed and implemented course structure for Full Stack Application Development course for Masters students. Gave Lectures 6-9 hrs per week on relavent topics such as Web Development & Database Managment. Lead lab sessions, elevating student understanding and engagement in the course.">Read More</button>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -148,7 +192,8 @@
                         <div class="timeline-date">Jan 2022 - Dec 2023</div>
                         <div class="timeline-content">
                             <h3>Asian Institute of Technology</h3>
-                            <p>I joined Asian Institute of Technology for Masters in Engineering in the field of Computer Science, to explore the software world.</p>
+                            <p>I joined Asian Institute of Technology for Masters in Engineering in the field of Computer Science...</p>
+                            <button class="read-more-btn" data-fulltext="I joined Asian Institute of Technology for Masters in Engineering in the field of Computer Science, to explore the software world.">Read More</button>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -156,7 +201,8 @@
                         <div class="timeline-date">Mar - Sep 2021</div>
                         <div class="timeline-content">
                             <h3>Embedded Systems Engineer</h3>
-                            <p>At Rivin Infra Tech As a Developed an embedded system with algorithms for remote patient monitoring, achieving 5-day battery life, and 95% accuracy. Contributed to water-resistant jacket design, gathering customer feedback for product-market fit. Implemented battery health features in BMS with a 2-week time to market, enabling vital monitoring and web reporting. Designed optimized double-sided PCB for wearable devices, ensuring signal integrity (>65 dBm) for WI-FI network.</p>
+                            <p>At Rivin Infra Tech As a Developed an embedded system with algorithms for remote patient monitoring, achieving 5-day battery life, and 95% accuracy...</p>
+                            <button class="read-more-btn" data-fulltext="At Rivin Infra Tech As a Developed an embedded system with algorithms for remote patient monitoring, achieving 5-day battery life, and 95% accuracy. Contributed to water-resistant jacket design, gathering customer feedback for product-market fit. Implemented battery health features in BMS with a 2-week time to market, enabling vital monitoring and web reporting. Designed optimized double-sided PCB for wearable devices, ensuring signal integrity (>65 dBm) for WI-FI network.">Read More</button>
                         </div>
                     </div>
                      <div class="timeline-item">
@@ -164,7 +210,8 @@
                         <div class="timeline-date">Aug - Oct 2020</div>
                         <div class="timeline-content">
                             <h3>Hex N Bit</h3>
-                            <p>Developed a security system that utilizes microcontrollers and sensors to detect heat radiation from a maximum distance of 10 meters, resulting in successful alert delivery to predefined phone numbers in a timely manner. Verified project performance by conducting various tests such as hardware debugging, software emulation, and field tests to monitor environmental changes. Analyzed project quality by sampling and testing quality and accuracy, resulting in 99% accuracy in response from the machine. Documented project activities, problems, and solutions by recording hardware and software usage, readings, performance data, and engineering notes.</p>
+                            <p>Developed a security system that utilizes microcontrollers and sensors to detect heat radiation from a maximum distance of 10 meters...</p>
+                            <button class="read-more-btn" data-fulltext="Developed a security system that utilizes microcontrollers and sensors to detect heat radiation from a maximum distance of 10 meters, resulting in successful alert delivery to predefined phone numbers in a timely manner. Verified project performance by conducting various tests such as hardware debugging, software emulation, and field tests to monitor environmental changes. Analyzed project quality by sampling and testing quality and accuracy, resulting in 99% accuracy in response from the machine. Documented project activities, problems, and solutions by recording hardware and software usage, readings, performance data, and engineering notes.">Read More</button>
                         </div>
                     </div>
                      <div class="timeline-item">
@@ -173,6 +220,7 @@
                         <div class="timeline-content">
                             <h3>I joined JNTUH</h3>
                             <p>My 4 year B.Tech journey started as an Electronics and Communication Engineer. Started exploring width opportunities instead of depth ones.</p>
+                            <button class="read-more-btn" data-fulltext="My 4 year B.Tech journey started as an Electronics and Communication Engineer. Started exploring width opportunities instead of depth ones.">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -186,14 +234,35 @@
                     <h2>Learning List</h2>
                     <p>My current focus is on these exciting technologies:</p>
                 </div>
-                <div class="learning-list">
-                    <div class="learning-item">Agentic AI systems</div>
-                    <div class="learning-item">AI automation with N8N</div>
-                    <div class="learning-item">Distill 70B AI models</div>
-                    <div class="learning-item">Artifical General Intelligence</div>
-                    <div class="learning-item">Advanced CI/CD Pipelines AI systems</div>
-                    <div class="learning-item">Serverless deployments strategies</div>
-                    <div class="learning-item">Cloud Native Security</div>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <h3>Agentic AI Systems</h3>
+                        <p>Exploring feedback based autonomous agents for complex problem-solving.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>AI Automation with N8N</h3>
+                        <p>Learning how to build powerful workflows (such as integrating excel) and automating tasks with AI.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Distilling 8B AI Models</h3>
+                        <p>Teaching small parameter models from higher paramter models.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Artificial General Intelligence</h3>
+                        <p>Studying the path towards more capable and general AI.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Advanced CI Pipelines for agentic AI systems</h3>
+                        <p>Implementing intelligent and automated deployment strategies.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Serverless Deployments strategies</h3>
+                        <p>Learning how to scale in cost-effective manner in cloud agnostic architectures.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Cloud Native Security</h3>
+                        <p>How to Secure modern applications and infrastructure in the cloud.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -348,5 +417,13 @@
     </footer>
 
     <script src="modern_main.js"></script>
+
+    <div id="timeline-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-body"></p>
+        </div>
+    </div>
 </body>
 </html>
