@@ -28,11 +28,11 @@
         <section id="home">
             <div class="hero">
                 <div class="hero-text">
-                    <span class="subheading">Hello</span>
+                    <span class="subheading">Hello <span class="waving-hand">👋</span></span>
                     <h1>I'm <span>Somesh Rao Coka</span></h1>
                     <h2>An aspiring young Cloud Professional</h2>
-                    <a href="https://1drv.ms/b/s!Aquf-GaQg1FZhuokE8-47OXRj_g0-w?e=Dd9oFE" target="_blank" class="btn">Download CV</a>
-                    <a href="https://drive.google.com/file/d/1zNdAMD0zr-Sa7LYh1_VcCzrRdOm_YhtJ/view?usp=sharing" target="_blank" class="btn">Feedback</a>
+                    <a href="https://1drv.ms/b/s!Aquf-GaQg1FZhuokE8-47OXRj_g0-w?e=Dd9oFE" target="_blank" class="btn">Curriculum Vitae</a>
+                    <a href="https://drive.google.com/file/d/1zNdAMD0zr-Sa7LYh1_VcCzrRdOm_YhtJ/view?usp=sharing" target="_blank" class="btn">Testimonial</a>
                 </div>
                 <div class="hero-image">
                     <img src="images/ME_walk.jpg" alt="Somesh Rao Coka">
@@ -53,8 +53,11 @@
                             Proactive Autoscaling in Servers using Kubernetes, Developed an algorithm to scale systems fastly using Transformers.
                             <br>I am currently looking a job in Cloud domain and DevOps field. <br> I am also an AWS certified solution architect.
                         </p>
-                        <span class="subheading">Life Philosophy</span>
-                        <h5>"If you don't fight, you can't win."</h5>
+                        <div class="life-philosophy">
+                            <span class="subheading">Life Philosophy</span>
+                            <h3 class="telugu-philosophy">మీరు పోరాడకపోతే, మీరు గెలవలేరు.</h3>
+                            <p class="english-philosophy">"If you don't fight, you can't win."</p>
+                        </div>
                     </div>
                     <div class="certifications-new">
                         <a href="https://www.credly.com/badges/9615b539-1c48-4380-9b7e-af96d3472615/public_url"><img src="images/SAAC03image.png" alt="AWS Certified Solutions Architect - Associate"></a>
@@ -257,16 +260,28 @@
             <div class="container">
                 <div class="heading">
                     <span class="subheading">Contact</span>
-                    <h2>Let's Connect 👋</h2>
+                    <h2>Let's Connect</h2>
                 </div>
-                <form method="POST" action="https://formspree.io/f/xleqeywr" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="_replyto" placeholder="Your Email" required>
-                    <input type="url" placeholder="Your LinkedIn Url">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="message" rows="7" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="social-buttons">
+                            <a href="https://www.linkedin.com/in/somesh-rao-coka-7a2b26190/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+                            <a href="https://github.com/SomeshRao007" target="_blank" class="social-btn github">GitHub</a>
+                            <a href="https://www.instagram.com/rao_rules_/" target="_blank" class="social-btn instagram">Instagram</a>
+                        </div>
+                         <form method="POST" action="https://formspree.io/f/xleqeywr" class="contact-form">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="_replyto" placeholder="Your Email" required>
+                             <input type="url" name="linkedin" placeholder="Your LinkedIn Url">
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-image">
+                        <img src="images/contact_img.jpg" alt="Contact Me">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
