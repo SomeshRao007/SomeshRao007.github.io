@@ -78,4 +78,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+// Skills Tabs Logic
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabLinks.length > 0 && tabContents.length > 0) {
+        tabLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const tabId = link.getAttribute('data-tab');
+
+                // Deactivate all tabs and contents
+                tabLinks.forEach(item => item.classList.remove('active'));
+                tabContents.forEach(item => item.classList.remove('active'));
+
+                // Activate the clicked tab and corresponding content
+                link.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    }
 });
