@@ -280,3 +280,44 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+/* Learning List */
+.learning-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.learning-item {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Counter Section */
+#counter-section {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+#counter-section .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.counter-item h3 {
+    font-size: 3rem;
+    margin: 0;
+}
