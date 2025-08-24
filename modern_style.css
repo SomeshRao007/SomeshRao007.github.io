@@ -310,14 +310,30 @@ main.blur {
 @media (min-width: 1024px) {
     .hero {
         flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-top: 100px;
         height: 100vh;
-        text-align: left;
+        gap: 2rem;
+        padding-right: 10rem;
     }
 
     .hero-text {
         max-width: 50%;
         text-align: left;
+        padding-left: 10rem;
+    }
+
+    .hero-text .subheading {
+        font-weight: 300;
+        display: inline-block;
+    }
+
+    .waving-hand {
+        animation: wave 2s infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
     }
 
     .hero-text h1 {
