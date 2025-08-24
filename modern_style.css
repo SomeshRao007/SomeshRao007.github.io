@@ -316,7 +316,7 @@ main.blur {
         padding-top: 100px;
         height: 100vh;
         gap: 2rem;
-        padding-right: 10rem;
+        padding-right: 8rem;
     }
 
     .hero-text {
@@ -800,29 +800,35 @@ footer p {
 }
 
 .social-btn {
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
     font-weight: 500;
     transition: opacity 0.3s ease;
-    font-size: clamp(0.9rem, 3vw, 1rem);
     min-height: 44px;
+    min-width: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    min-width: 100px;
+    flex: 0 0 auto;
+    background-color: transparent;
 }
 
 .social-btn:hover {
     opacity: 0.9;
 }
 
-.social-btn.linkedin { background-color: #0077b5; }
-.social-btn.github { background-color: #333; }
-.social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-btn img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.social-btn.linkedin { background-color: transparent; }
+.social-btn.github { background-color: transparent; }
+.social-btn.instagram { background: transparent; }
 
 .contact-form {
     display: flex;
@@ -884,9 +890,8 @@ footer p {
     }
 
     .social-btn {
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem;
         flex: none;
-        min-width: auto;
     }
 }
 
@@ -1072,13 +1077,13 @@ footer p {
     }
 
     .social-buttons {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: center;
     }
 
     .social-btn {
         flex: none;
-        width: 100%;
+        width: auto;
     }
 
     .counter-grid {
@@ -1456,4 +1461,11 @@ footer p {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
+}
+/* Button icons styling */
+.btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
